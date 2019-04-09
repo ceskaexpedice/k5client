@@ -1,0 +1,20 @@
+<div class="ngx-datepicker-container">
+  <div class="ngx-datepicker-calendar-container">
+    <div class="topbar-container">
+      <span class="topbar-title">{{ 'calendar.months.' + date.getMonth() | translate }}</span>
+    </div>
+    <div class="main-calendar-container">
+      <div class="main-calendar-day-names">
+        <span class="day-name-unit" *ngFor="let day of [0,1,2,3,4,5,6]">{{ 'calendar.days.' + day | translate }}</span>
+      </div>
+      <div class="main-calendar-days">
+        <span class="day-unit" *ngFor="let day of days; let i = index;">
+          <span *ngIf="!day.isActive" class="day-unit-inner" [ngClass]="{ 'previous-month': !day.inThisMonth }" >{{ day.day }}</span>
+          <a *ngIf="day.isActive" class="day-unit-inner" [routerLink]="appSettings.getRouteFor('view/' + day.uuid)">{{ day.day }}</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+

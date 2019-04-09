@@ -6,7 +6,7 @@
       <a (click)="bookService.changeNavigationTab('pages');analytics.sendEvent('viewer', 'navigation', 'pages');" [class.active]="bookService.activeNavigationTab === 'pages'">
         <span class="app-desc">{{ 'model_plural.page' | translate }}</span>
       </a>
-    </li> 
+    </li>
     <li *ngIf="bookService.articles.length > 0"  class="tab tab-{{bookService.navigationTabsCount}}">
       <a (click)="bookService.changeNavigationTab('articles');analytics.sendEvent('viewer', 'navigation', 'articles');" [class.active]="bookService.activeNavigationTab === 'articles'">
         <span class="app-desc">{{ 'model_plural.article' | translate }}</span>

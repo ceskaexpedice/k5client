@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+.app-button, .btn, .waves-effect, .waves-light, .btn-large, .text-darken-3, .darken3, .app-button:hover, .waves-effect, .waves-light  {
+    //*background-color:#007783;*/
+}
+
+
+#nk-footer {
+  width:950px;
+  margin:auto;
+  margin-top:20px;
+  margin-bottom:40px;
+}
+
+#nk-footer-left {
+  float:left;
+  background-color:white;
+}
+
+#nk-footer-right {
+  float:right;
+}
+
+#nk-footer-right h3 {
+  margin:0px;
+  padding:0px;
+  font-size:1.2em;
+  font-weight: bold;
+}
+
+#nk-footer-social {
+  float:left;
+  width:900px;
+  margin-top:10px;
+}
+
+.app-page-content {
+  padding:0 10px 0 10px;
+}
+
+.app-brand-top img {
+  height:120px;
+}
+
+app-home-logo {
+
+    .app-logo-big.brand-logo {
+        .app-brand-top.app-brand-img {
+
+          img {
+            margin-left:8px;
+            height: 150px;
+          }
+        }
+      }
+}
+
+
+
+@media(max-width: 600px) {
+   #nk-footer {
+     width:auto;
+   }
+   #nk-footer img {
+     display:block;
+   }
+
+   #nk-footer-social {
+     width:auto;
+   }
+
+   #nk-footer-right {
+     display:none;
+   }
+}

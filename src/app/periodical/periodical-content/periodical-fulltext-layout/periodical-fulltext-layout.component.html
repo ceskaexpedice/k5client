@@ -1,6 +1,6 @@
 <div id="app-periodical-fulltext-container" class="app-periodical-fulltext-layout-wrapper">
   <app-periodical-fulltext-item [item]="item" *ngFor="let item of periodicalService.fulltext.pages"></app-periodical-fulltext-item>
-  
+
   <app-alert *ngIf="periodicalService.getNumberOfResults() === 0"
     type="warning"
     title="alert.warning"
@@ -15,6 +15,6 @@
           (next)="periodicalService.nextFtPage()"
           (previous)="periodicalService.previousFtPage()"
           (change)="periodicalService.onFtPage($event)">
-  </app-paginator> 
+  </app-paginator>
 
 </div>

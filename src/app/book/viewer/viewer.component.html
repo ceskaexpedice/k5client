@@ -2,37 +2,37 @@
   <app-viewer-controls [class.hide-on-inactivity]="hideOnInactivity"></app-viewer-controls>
 
   <span *ngIf="controlsService.leftPanelVisible && !controlsService.fullscreenEnabled()"
-        class="app-handle app-left-handle valign-wrapper hide-on-small-only" 
-        (click)="controlsService.hideLeftPanel()" 
-        mz-tooltip 
-        [tooltip]="'view_controls.tooltip_hide_left' | translate" 
+        class="app-handle app-left-handle valign-wrapper hide-on-small-only"
+        (click)="controlsService.hideLeftPanel()"
+        mz-tooltip
+        [tooltip]="'view_controls.tooltip_hide_left' | translate"
         [position]="'right'">
         <i class="app-mdi-menu-left" [class.app-mdi-tablet]="controlsService.leftPanelVisible"></i>
   </span>
 
   <span *ngIf="!controlsService.leftPanelVisible && !controlsService.fullscreenEnabled()"
-        class="app-handle app-left-handle valign-wrapper hide-on-small-only" 
-        (click)="controlsService.showLeftPanel()" 
-        mz-tooltip 
-        [tooltip]="'view_controls.tooltip_show_left' | translate" 
+        class="app-handle app-left-handle valign-wrapper hide-on-small-only"
+        (click)="controlsService.showLeftPanel()"
+        mz-tooltip
+        [tooltip]="'view_controls.tooltip_show_left' | translate"
         [position]="'right'">
         <i class="app-mdi-menu-right"></i>
   </span>
 
   <span *ngIf="controlsService.rightPanelVisible && !controlsService.fullscreenEnabled()"
-        class="app-handle app-right-handle valign-wrapper hide-on-small-only" 
-        (click)="controlsService.hideRightPanel()" 
-        mz-tooltip 
-        [tooltip]="'view_controls.tooltip_hide_right' | translate" 
+        class="app-handle app-right-handle valign-wrapper hide-on-small-only"
+        (click)="controlsService.hideRightPanel()"
+        mz-tooltip
+        [tooltip]="'view_controls.tooltip_hide_right' | translate"
         [position]="'left'">
         <i class="app-mdi-menu-right" [class.app-mdi-tablet]="controlsService.rightPanelVisible"></i>
   </span>
 
   <span *ngIf="!controlsService.rightPanelVisible && !controlsService.fullscreenEnabled()"
-        class="app-handle app-right-handle valign-wrapper hide-on-small-only" 
-        (click)="controlsService.showRightPanel()" 
-        mz-tooltip 
-        [tooltip]="'view_controls.tooltip_show_right' | translate" 
+        class="app-handle app-right-handle valign-wrapper hide-on-small-only"
+        (click)="controlsService.showRightPanel()"
+        mz-tooltip
+        [tooltip]="'view_controls.tooltip_show_right' | translate"
         [position]="'left'">
         <i class="app-mdi-menu-left"></i>
   </span>
@@ -43,6 +43,21 @@
              message="alert.inaccessible_document"
              description="alert.inaccessible_document_description">
   </app-alert>
+
+  <div *ngIf="bookService.isPageInaccessible()" style="width:90%;margin:auto;position:relative;top:140px;z-index:999;">
+          <p>{{ 'inaccessible_document.text1' | translate }}</p>
+          <br><p style="font-weight:bold;">{{ 'inaccessible_document.title1' | translate }}</p>
+          <p>{{ 'inaccessible_document.text2' | translate }}</p>
+          <p>{{ 'inaccessible_document.text3' | translate }}</p>
+
+          <br><p style="font-weight:bold;">{{ 'inaccessible_document.title2' | translate }}</p>
+          <p>{{ 'inaccessible_document.text4' | translate }}<a href="{{ 'inaccessible_document.order_link' | translate }}" target="_blank"><font color="blue">{{ 'inaccessible_document.form' | translate }}</font></a>. {{ 'inaccessible_document.text5' | translate }} <a href="http://dds.nkp.cz:8080/vpk/dds.Mindex"  target="_blank"><font color="blue">eDDO</font></a>{{ 'inaccessible_document.text6' | translate }} <a href="http://www.nkp.cz/sluzby/edodo"  target="_blank"><font color="blue">{{ 'inaccessible_document.web_nk' | translate }}</font></a>.</p>
+
+          <br><p style="font-weight:bold;">{{ 'inaccessible_document.title3' | translate }}</p>
+          <p><a href="{{ 'inaccessible_document.copyright_link' | translate }}" target="_blank"><font color="blue">{{ 'inaccessible_document.copyright_law' | translate }}</font></a> {{ 'inaccessible_document.text7' | translate }} <strong><i>{{ 'inaccessible_document.email' | translate }}</i></strong>. {{ 'inaccessible_document.text8' | translate }}</p>
+</div>
+
+
 
   <app-alert *ngIf="bookService.dnntFlag && bookService.isPageInaccessible()"
       type="warning"

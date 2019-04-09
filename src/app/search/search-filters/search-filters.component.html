@@ -2,7 +2,7 @@
 
 <div class="app-filters-wrapper">
   <app-search-filters-used *ngIf="searchService.query.anyFilter()"></app-search-filters-used>
-  
+
   <mz-collapsible [mode]="'expandable'" *ngIf="filters.indexOf('accessibility') > -1">
     <mz-collapsible-item [active]="collapsedFilter">
       <mz-collapsible-item-header>
@@ -27,11 +27,11 @@
     </mz-collapsible-item>
   </mz-collapsible>
 
-   
+
   <mz-collapsible [mode]="'expandable'" *ngIf="searchService.doctypes.length && filters.indexOf('doctypes') > -1" class="hide-on-large-only">
     <mz-collapsible-item [active]="collapsedFilter">
       <mz-collapsible-item-header>
-        {{ 'search.doctypes' | translate }}   
+        {{ 'search.doctypes' | translate }}
         <i mz-icon-mdi [icon]="'chevron-down'" [class]="'app-clean-mg'"></i>
         <i mz-icon-mdi [icon]="'chevron-left'" [class]="'app-clean-mg'"></i>
       </mz-collapsible-item-header>
@@ -50,13 +50,13 @@
       </mz-collection>
       </mz-collapsible-item-body>
     </mz-collapsible-item>
-  </mz-collapsible>     
+  </mz-collapsible>
 
 
   <mz-collapsible [mode]="'expandable'" *ngIf="searchService.keywords.length && filters.indexOf('keywords') > -1">
     <mz-collapsible-item [active]="collapsedFilter">
       <mz-collapsible-item-header>
-        {{ 'search.keywords' | translate }}            
+        {{ 'search.keywords' | translate }}
         <i mz-icon-mdi [icon]="'chevron-down'" [class]="'app-clean-mg'"></i>
         <i mz-icon-mdi [icon]="'chevron-left'" [class]="'app-clean-mg'"></i>
       </mz-collapsible-item-header>
@@ -73,7 +73,7 @@
           </mz-collection-item>
           <mz-collection-item *ngIf="searchService.keywords.length > 6">
               <span class="app-row">
-                <a class="light-blue-text text-darken-3" *ngIf="!keywordsExpanded" (click)="keywordsExpanded = true">{{'filters.btn_show_more' | translate}}</a>  
+                <a class="light-blue-text text-darken-3" *ngIf="!keywordsExpanded" (click)="keywordsExpanded = true">{{'filters.btn_show_more' | translate}}</a>
                 <a class="light-blue-text text-darken-3" *ngIf="keywordsExpanded" (click)="keywordsExpanded = false">{{'filters.btn_show_less' | translate}}</a>
               </span>
             </mz-collection-item>
@@ -87,7 +87,7 @@
   <mz-collapsible [mode]="'expandable'" *ngIf="searchService.authors.length && filters.indexOf('authors') > -1">
     <mz-collapsible-item [active]="collapsedFilter">
       <mz-collapsible-item-header>
-        {{ 'search.authors' | translate }}   
+        {{ 'search.authors' | translate }}
         <i mz-icon-mdi [icon]="'chevron-down'" [class]="'app-clean-mg'"></i>
         <i mz-icon-mdi [icon]="'chevron-left'" [class]="'app-clean-mg'"></i>
       </mz-collapsible-item-header>
@@ -104,7 +104,7 @@
           </mz-collection-item>
           <mz-collection-item *ngIf="searchService.authors.length > 6">
               <span class="app-row">
-                <a class="light-blue-text text-darken-3" *ngIf="!authorsExpanded" (click)="authorsExpanded = true">{{'filters.btn_show_more' | translate}}</a>  
+                <a class="light-blue-text text-darken-3" *ngIf="!authorsExpanded" (click)="authorsExpanded = true">{{'filters.btn_show_more' | translate}}</a>
                 <a class="light-blue-text text-darken-3" *ngIf="authorsExpanded" (click)="authorsExpanded = false">{{'filters.btn_show_less' | translate}}</a>
               </span>
             </mz-collection-item>
@@ -117,7 +117,7 @@
   <mz-collapsible [mode]="'expandable'" *ngIf="searchService.geonames.length && filters.indexOf('geonames') > -1">
     <mz-collapsible-item [active]="collapsedFilter">
       <mz-collapsible-item-header>
-        {{ 'search.geonames' | translate }}   
+        {{ 'search.geonames' | translate }}
         <i mz-icon-mdi [icon]="'chevron-down'" [class]="'app-clean-mg'"></i>
         <i mz-icon-mdi [icon]="'chevron-left'" [class]="'app-clean-mg'"></i>
       </mz-collapsible-item-header>
@@ -134,7 +134,7 @@
           </mz-collection-item>
           <mz-collection-item *ngIf="searchService.geonames.length > 6">
               <span class="app-row">
-                <a class="light-blue-text text-darken-3" *ngIf="!geonamesExpanded" (click)="geonamesExpanded = true">{{'filters.btn_show_more' | translate}}</a>  
+                <a class="light-blue-text text-darken-3" *ngIf="!geonamesExpanded" (click)="geonamesExpanded = true">{{'filters.btn_show_more' | translate}}</a>
                 <a class="light-blue-text text-darken-3" *ngIf="geonamesExpanded" (click)="geonamesExpanded = false">{{'filters.btn_show_less' | translate}}</a>
               </span>
             </mz-collection-item>
@@ -147,7 +147,7 @@
   <mz-collapsible [mode]="'expandable'" *ngIf="searchService.locations.length && filters.indexOf('locations') > -1">
     <mz-collapsible-item [active]="collapsedFilter">
       <mz-collapsible-item-header>
-        {{ 'search.locations' | translate }}   
+        {{ 'search.locations' | translate }}
         <i mz-icon-mdi [icon]="'chevron-down'" [class]="'app-clean-mg'"></i>
         <i mz-icon-mdi [icon]="'chevron-left'" [class]="'app-clean-mg'"></i>
       </mz-collapsible-item-header>
@@ -164,7 +164,7 @@
           </mz-collection-item>
           <mz-collection-item *ngIf="searchService.locations.length > 6">
               <span class="app-row">
-                <a class="light-blue-text text-darken-3" *ngIf="!locationsExpanded" (click)="locationsExpanded = true">{{'filters.btn_show_more' | translate}}</a>  
+                <a class="light-blue-text text-darken-3" *ngIf="!locationsExpanded" (click)="locationsExpanded = true">{{'filters.btn_show_more' | translate}}</a>
                 <a class="light-blue-text text-darken-3" *ngIf="locationsExpanded" (click)="llocationsExpanded = false">{{'filters.btn_show_less' | translate}}</a>
               </span>
             </mz-collection-item>
@@ -172,12 +172,12 @@
       </mz-collection>
       </mz-collapsible-item-body>
     </mz-collapsible-item>
-  </mz-collapsible>    
+  </mz-collapsible>
 
   <mz-collapsible [mode]="'expandable'" *ngIf="searchService.languages.length && filters.indexOf('languages') > -1">
     <mz-collapsible-item [active]="collapsedFilter">
       <mz-collapsible-item-header>
-        {{ 'search.languages' | translate }}   
+        {{ 'search.languages' | translate }}
         <i mz-icon-mdi [icon]="'chevron-down'" [class]="'app-clean-mg'"></i>
         <i mz-icon-mdi [icon]="'chevron-left'" [class]="'app-clean-mg'"></i>
       </mz-collapsible-item-header>
@@ -194,7 +194,7 @@
           </mz-collection-item>
           <mz-collection-item *ngIf="searchService.languages.length > 6">
               <span class="app-row">
-                <a class="light-blue-text text-darken-3" *ngIf="!languagesExpanded" (click)="languagesExpanded = true">{{'filters.btn_show_more' | translate}}</a>  
+                <a class="light-blue-text text-darken-3" *ngIf="!languagesExpanded" (click)="languagesExpanded = true">{{'filters.btn_show_more' | translate}}</a>
                 <a class="light-blue-text text-darken-3" *ngIf="languagesExpanded" (click)="languagesExpanded = false">{{'filters.btn_show_less' | translate}}</a>
               </span>
             </mz-collection-item>
@@ -202,12 +202,12 @@
       </mz-collection>
       </mz-collapsible-item-body>
     </mz-collapsible-item>
-  </mz-collapsible>    
+  </mz-collapsible>
 
   <mz-collapsible [mode]="'expandable'" *ngIf="searchService.collections.length && filters.indexOf('collections') > -1">
     <mz-collapsible-item [active]="collapsedFilter">
       <mz-collapsible-item-header>
-        {{ 'search.collections' | translate }}   
+        {{ 'search.collections' | translate }}
         <i mz-icon-mdi [icon]="'chevron-down'" [class]="'app-clean-mg'"></i>
         <i mz-icon-mdi [icon]="'chevron-left'" [class]="'app-clean-mg'"></i>
       </mz-collapsible-item-header>
@@ -224,7 +224,7 @@
           </mz-collection-item>
           <mz-collection-item *ngIf="searchService.collections.length > 6">
               <span class="app-row">
-                <a class="light-blue-text text-darken-3" *ngIf="!collectionsExpanded" (click)="collectionsExpanded = true">{{'filters.btn_show_more' | translate}}</a>  
+                <a class="light-blue-text text-darken-3" *ngIf="!collectionsExpanded" (click)="collectionsExpanded = true">{{'filters.btn_show_more' | translate}}</a>
                 <a class="light-blue-text text-darken-3" *ngIf="collectionsExpanded" (click)="collectionsExpanded = false">{{'filters.btn_show_less' | translate}}</a>
               </span>
             </mz-collection-item>
@@ -232,7 +232,7 @@
       </mz-collection>
       </mz-collapsible-item-body>
     </mz-collapsible-item>
-  </mz-collapsible>   
+  </mz-collapsible>
 
 
 
@@ -249,9 +249,9 @@
         <div class="year-range-wrapper">
           <div class="year-range">
             <span>{{ 'search.year-range.from' | translate }}</span>
-            <input [(ngModel)]="yearFrom" (change)="onYearFromValueChanged()" type="number">
+            <input [(ngModel)]="yearFrom" (change)="onYearFromValueChanged()" onclick="this.select();" type="number">
             <span>{{ 'search.year-range.to' | translate }}</span>
-            <input [(ngModel)]="yearTo" (change)="onYearToValueChanged()" type="number">
+            <input [(ngModel)]="yearTo" (change)="onYearToValueChanged()" onclick="this.select();" type="number">
           </div>
 
           <a class="light-blue darken-3 z-depth-0 btn waves-effect waves-light" mz-button (click)="applyYearRange()">

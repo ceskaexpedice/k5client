@@ -1,17 +1,17 @@
 <div class="app-music-controls-wrapper">
   <div class="app-controls-buttons-wrapper">
-      <i *ngIf="musicService.activeTrack && !musicService.isPlaying()" 
-          mz-icon-mdi 
+      <i *ngIf="musicService.activeTrack && !musicService.isPlaying()"
+          mz-icon-mdi
           (click)="play()"
-          [size]="'48px'" 
-          [icon]="'play'"  
+          [size]="'48px'"
+          [icon]="'play'"
           class="app-controls-button app-controls-button-play">
       </i>
-      <i *ngIf="musicService.activeTrack && musicService.isPlaying()" 
-          mz-icon-mdi 
+      <i *ngIf="musicService.activeTrack && musicService.isPlaying()"
+          mz-icon-mdi
           (click)="pause()"
           [size]="'48px'" 
-          [icon]="'pause'" 
+          [icon]="'pause'"
           class="app-controls-button app-controls-button-pause">
       </i>
   </div>

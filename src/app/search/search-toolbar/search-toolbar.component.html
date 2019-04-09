@@ -29,7 +29,7 @@
             <mz-dropdown-item><a (click)="searchService.changeOrdering('alphabetical')">{{ 'search.ordering.alphabetical' | translate }}</a></mz-dropdown-item>
             <mz-dropdown-item><a (click)="searchService.changeOrdering('newest')">{{ 'search.ordering.newest' | translate }}</a></mz-dropdown-item>
             <mz-dropdown-item><a (click)="searchService.changeOrdering('latest')">{{ 'search.ordering.latest' | translate }}</a></mz-dropdown-item>
-            <mz-dropdown-item><a (click)="searchService.changeOrdering('earliest')">{{ 'search.ordering.earliest' | translate }}</a></mz-dropdown-item>            
+            <mz-dropdown-item><a (click)="searchService.changeOrdering('earliest')">{{ 'search.ordering.earliest' | translate }}</a></mz-dropdown-item>
           </mz-dropdown>
         </span>
       </li>
@@ -54,8 +54,8 @@
 <span *ngIf="!state.showingFilters"
       class="app-handle valign-wrapper hide-on-med-and-up"
       (click)="hideFilters()"
-      mz-tooltip 
-      [tooltip]="'filters.btn_hide_filters' | translate" 
+      mz-tooltip
+      [tooltip]="'filters.btn_hide_filters' | translate"
       [position]="'right'">
       <i class="app-mdi-menu-left"></i>
 </span>
@@ -63,10 +63,9 @@
 <span *ngIf="state.showingFilters"
       class="app-handle valign-wrapper hide-on-med-and-up"
       (click)="hideFilters()"
-      mz-tooltip 
-      [tooltip]="'filters.btn_show_filters' | translate" 
+      mz-tooltip
+      [tooltip]="'filters.btn_show_filters' | translate"
       [position]="'right'">
       <i class="app-mdi-menu-right"></i>
 </span>
 -->
-

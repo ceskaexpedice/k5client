@@ -17,7 +17,7 @@ app-book-search {
         border-bottom-color: transparent;
         padding-left: 30px;
         padding-right: 30px;
-        width: calc(100% - 60px);
+        width: calc(100% - 60px);        
         &::placeholder {
           color: $app-grey;
         }
@@ -29,21 +29,21 @@ app-book-search {
         top: 5px;
         color: $app-grey;
       }
-      
+
       .mdi-magnify {
         position: absolute;
         left: 0;
         top: 5px;
         color: $app-grey;
       }
-      
+
       &.app-is-query {
         input {
           border-bottom: 1px solid $primary-color !important;
           box-shadow: 0 1px 0 0 $primary-color;
         }
       }
-      
+
       &.app-is-query, &:focus-within {
         .mdi-magnify  {
           color: $primary-color;

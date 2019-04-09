@@ -48,8 +48,8 @@ export class HistoryService {
       const searchPath = this.appSettings.getRouteFor('search');
       const browsePath = this.appSettings.getRouteFor('browse');
       if ((last.startsWith(searchPath) && page.startsWith(searchPath)) ||
-           (last.startsWith(browsePath) && page.startsWith(browsePath)) ||
-           this.getPath(last) === this.getPath(page)) {
+          (last.startsWith(browsePath) && page.startsWith(browsePath)) ||
+          this.getPath(last) === this.getPath(page)) {
         this.removeCurrent();
       }
     }

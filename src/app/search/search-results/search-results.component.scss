@@ -1,0 +1,23 @@
+.search-results {
+    height: 100%;
+    overflow: auto;
+    app-result-card {
+        float: left;
+        width:16.66666%;
+        @media (max-width: 2300px) {
+          width:20%;
+        }
+        @media (max-width: 1900px) {
+          width:25%;
+        }
+        @media (max-width: 1500px) {
+          width:33.33333%;
+        }
+        @media (max-width: 1260px) {
+          width:50%;
+        }
+        @media (max-width: 900px) {
+          width:100%;
+        }
+    }
+}

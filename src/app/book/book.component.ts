@@ -5,6 +5,7 @@ import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { combineLatest } from 'rxjs/observable/combineLatest';
 import { AnalyticsService } from '../services/analytics.service';
 
+
 @Component({
   selector: 'app-book',
   templateUrl: './book.component.html'

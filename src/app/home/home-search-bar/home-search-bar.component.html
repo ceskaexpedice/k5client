@@ -11,7 +11,7 @@
     </div>
     <mz-checkbox-container [class.app-hide-filter]="!appSettings.availableFilter('accessibility')">
       <input mz-checkbox [(ngModel)]="accessibilityFilter" [label]="'navbar.checkbox_label' | translate" id="checkbox-id" type="checkbox" (change)="analytics.sendEvent('home', 'accessibility', accessibilityFilter + '');">
-    </mz-checkbox-container> 
+    </mz-checkbox-container>
   </div>
 </div>
 <div class="row">

@@ -15,14 +15,22 @@ export class PeriodicalFiltersComponent implements OnInit {
   }
 
   ngOnInit() {
+
     this.yearFrom = this.periodicalService.query.from;
+    if(this.yearFrom==0) {this.yearFrom=1612;}
     this.yearTo = this.periodicalService.query.to;
+
+    setTimeout(() => {
+              if(this.periodicalService.minYear!=null && (this.yearFrom==0 || this.yearFrom==1612)) {this.yearFrom = this.periodicalService.minYear;}
+        }, 1000);
   }
 
 
   onYearFromValueChanged() {
+
     if (!this.yearFrom || this.yearFrom < 0) {
       this.yearFrom = 0;
+      if(this.periodicalService.minYear!=null) {this.yearFrom = this.periodicalService.minYear;}
     } else if (this.yearFrom > this.yearTo) {
       this.yearFrom = this.yearTo;
     }

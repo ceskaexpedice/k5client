@@ -114,6 +114,8 @@ import { AboutComponent } from './about/about.component';
 import { AnalyticsService } from './services/analytics.service';
 import { DatepickerModule } from './datepicker';
 
+import { ResultCardComponent }  from './search/search-results/result-card/result-card.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -185,7 +187,8 @@ import { DatepickerModule } from './datepicker';
     RemovePrefixPipe,
     UpcasePipe,
     LoginComponent,
-    AboutComponent
+    AboutComponent,
+    ResultCardComponent
   ],
   entryComponents: [
     DialogOcrComponent,
@@ -262,4 +265,3 @@ import { DatepickerModule } from './datepicker';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-

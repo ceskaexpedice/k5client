@@ -25,9 +25,9 @@ app-periodical-fulltext-item {
   @media (max-width: 800px) {
     width:100%;
   }
-  
- 
-  
+
+
+
   .card {
     @extend .app-cursor-pointer;
     margin: 0.5rem;
@@ -35,7 +35,7 @@ app-periodical-fulltext-item {
     @include setCardShadow(0, 0, 0, $app-grey-l-2);
     &>div {
       height: 100%;
-    }  
+    }
     .card-content {
       padding: 10px;
       height: 100%;
@@ -97,10 +97,10 @@ app-periodical-fulltext-item {
               -webkit-line-clamp: 1;
               display: block;
               display: -webkit-box;
-              text-overflow: ellipsis;           
+              text-overflow: ellipsis; 
             }
             &.app-main-title {
-              font-weight: 600; 
+              font-weight: 600;
               margin-bottom: 5px;
               overflow: hidden;
               line-height: 20px;
@@ -147,14 +147,14 @@ app-periodical-fulltext-item {
             line-height: 16px;
             margin-top: 5px;
             height: 64px;
-            
+
             strong {
               color: $primary-color;
               @extend .app-font-bold;
             }
           }
         }
-      } 
+      }
     }
   }
 }

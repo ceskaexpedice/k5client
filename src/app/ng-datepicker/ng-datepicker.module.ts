@@ -1,0 +1,23 @@
+import { RouterModule } from '@angular/router';
+import { TranslatorModule } from 'angular-translator';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { NgSlimScrollModule } from 'ngx-slimscroll';
+import { NgDatepickerComponent } from './ng-datepicker.component';
+
+@NgModule({
+  declarations: [ NgDatepickerComponent ],
+  imports: [
+    CommonModule,
+    FormsModule,
+    NgSlimScrollModule,
+    RouterModule,
+    TranslatorModule.forRoot({
+      providedLanguages: ['en', 'cs'],
+      defaultLanguage: 'cs'
+    })
+  ],
+  exports: [ NgDatepickerComponent, CommonModule, FormsModule, NgSlimScrollModule ]
+})
+export class NgDatepickerModule { }

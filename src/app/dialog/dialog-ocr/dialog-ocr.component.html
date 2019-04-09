@@ -4,9 +4,14 @@
       <div *ngIf="ocr2" style="margin-top:15px;">
         {{ocr2}}
       </div>
+
+      <div *ngIf="error">
+          {{ 'dialogs.ocr_error' | translate }}
+      </div>
+
       <div *ngIf="citation" style="margin-top:15px; padding-top: 10px; border-top: 1px solid #ccc;" [innerHtml]="citation"></div>
     </mz-modal-content>
     <mz-modal-footer>
-      <button mz-button [flat]="true" mz-modal-close>Zavřít</button>
+      <button mz-button [flat]="true" mz-modal-close>{{ 'common.close' | translate }}</button>
     </mz-modal-footer>
   </mz-modal>

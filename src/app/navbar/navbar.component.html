@@ -5,19 +5,19 @@
     </a>
     <app-logo></app-logo>
   </div>
-  
+
   <div class="col app-col-right" [class.app-col-right-home]="state.atHome()" [class.app-search-bar-displayed]="mobileSearchBarExpanded">
     <app-navbar-search-bar *ngIf="!state.atHome()" [class.app-search-bar-show]="mobileSearchBarExpanded"></app-navbar-search-bar>
     <mz-navbar-item-container [align]="'right'" [class.app-col-right-home]="state.atHome()" class="app-buttons">
-      <mz-navbar-item routerLinkActive="active" #collections="routerLinkActive">
-        <a (click)="analytics.sendEvent('navbar', 'collections');" *ngIf="!appSettings.richCollections" [routerLink]="appSettings.getRouteFor('browse')" [queryParams]="{category: 'collections'}">{{ 'navbar.collections' | translate }}</a>
-        <a (click)="analytics.sendEvent('navbar', 'collections');" *ngIf="appSettings.richCollections" [routerLink]="appSettings.getRouteFor('collections')">{{ 'navbar.collections' | translate }}</a>
-      </mz-navbar-item>
       <mz-navbar-item routerLinkActive="active" #browse="routerLinkActive">
-        <a (click)="analytics.sendEvent('navbar', 'browse');" [routerLink]="appSettings.getRouteFor('browse')">{{ 'navbar.browse' | translate }}</a>
+        <a [routerLink]="appSettings.getRouteFor('browse')">{{ 'navbar.browse' | translate }}</a>
+      </mz-navbar-item>
+      <mz-navbar-item routerLinkActive="active" #collections="routerLinkActive">
+        <a *ngIf="!appSettings.richCollections" [routerLink]="appSettings.getRouteFor('browse')" [queryParams]="{category: 'collections'}">{{ 'navbar.collections' | translate }}</a>
+        <a *ngIf="appSettings.richCollections" [routerLink]="appSettings.getRouteFor('collections')">{{ 'navbar.collections' | translate }}</a>
       </mz-navbar-item>
       <mz-navbar-item routerLinkActive="active" *ngIf="appSettings.aboutPage">
-        <a (click)="analytics.sendEvent('navbar', 'about');" [routerLink]="appSettings.getRouteFor('about')">{{ 'navbar.about' | translate }}</a>
+        <a [routerLink]="appSettings.getRouteFor('about')">{{ 'navbar.about' | translate }}</a>
       </mz-navbar-item>
 
 
@@ -29,7 +29,7 @@
           <a [routerLink]="appSettings.getRouteFor('login')">Přihlásit</a>
         </mz-navbar-item>
       </ng-container>
-      
+
       <mz-navbar-item *ngIf="translator.language == 'cs'"><a (click)='onLanguageChanged("en")'>English</a></mz-navbar-item>
       <mz-navbar-item *ngIf="translator.language == 'en'"><a (click)='onLanguageChanged("cs")'>Česky</a></mz-navbar-item>
     </mz-navbar-item-container>

@@ -2,7 +2,7 @@
   "common": {
     "of": "of",
     "cancel": "Cancel",
-    "close": "Close",    
+    "close": "Close",
     "warning": "Warning",
     "of_pages": "pages",
     "n_pages": "{{ count == 1 ? 'page' : 'pages' }}",
@@ -63,13 +63,13 @@
     "k3": "Search in the old digitization",
     "results": "Results",
     "keywords": "Keyword",
-    "doctypes": "Document Type",   
-    "collections": "Collection", 
+    "doctypes": "Document Type",
+    "collections": "Collection",
     "languages": "Language",
     "locations": "Location",
     "geonames": "Geographic name",
     "authors": "Author",
-    "inaccessible_document": "The document is not publicly accessible",    
+    "inaccessible_document": "The document is not publicly accessible",
     "ordering": {
       "label": "Ordering",
       "relevance": "Relevance",
@@ -111,13 +111,13 @@
       "doctypes": "Lookup Document type",
       "authors": "Lookup Author",
       "collections": "Lookup Collection",
-      "keywords": "Lookup Keyword", 
+      "keywords": "Lookup Keyword",
       "languages": "Lookup Language",
       "locations": "Lookup Location",
       "geonames": "Lookup Geographic name"
     },
     "ordering": {
-      "label": "Ordering",      
+      "label": "Ordering",
       "occurrence": "Occurrence",
       "alphabetical": "Alphabetical"
     },
@@ -139,36 +139,61 @@
     "error": "Error",
     "no_results_found": "No results found. Please, try a different query.",
     "inaccessible_document": "The document is not publically accessible",
-    "inaccessible_document_description": "Tento dokument je stále chráněn Autorským zákonem (č. 121/2000 Sb.) a není ho tedy možné veřejně zpřístupnit, dokud neuplyne 70 let od smrti všech jeho autorů (včetně překladatele, ilustrátora atd.) a 50 let od vydání díla. K dokumentu lze získat přístup z počítačových stanic v budově knihovny, která jej vlastní. Informaci o vlastnictví požadovaného dokument zjistíte v podrobnostech vpravo jako „Místo uložení“.",
-    "inaccessible_document_dnnt": "Tento dokument není veřejně přístupný",
+    "inaccessible_document_description": " ",
+    "inaccessible_document_dnnt": "The document is not publically accessible",
     "inaccessible_document_dnnt_description": "Tento dokument spadá do režimu Děl nedostupných na trhu. Je dostupný ve vybraných knihovnách na vyhrazených terminálech. Chystá se vzdálené zpřístupnění pro registrované uživatele knihoven.",
     "failed_to_load_image": "Failed to load the image",
     "book_no_results": "No results found"
   },
+  "inaccessible_document": {
+    "text1": "Digital copies of documents are accessible only on the National Library premises.",
+    "title1": "Full access to digital documents in the NL CR",
+    "text2": "In accordance with the Law No. 121/2000 Coll. (the Copyright Law), some digitised documents can be displayed on the library premises only. Full access to these documents is allowed from designated computers in the NL reading rooms. Access to internet is denied on these computers, it is not allowed to download the digitised documents into USB or other memory media. Documents can be printed out in the NL.",
+    "text3": "Computers with full access to the Digital Library are to be found in the Main Hall and in the NL reading rooms.",
+
+    "title2": "Order copies from/of digital documents",
+    "text4": "A paper copy of the digital document from the NL collections can be ordered through the ",
+    "form": "order form",
+    "text5": "Users, who have concluded the agreement on ",
+    "text6": " Service can also order a copy through the eDDO Service. For more information about the eDDO Service kindly see at the ",
+    "web_nk": "NL website",
+
+
+    "title3": "Access to digital documents in accordance with the Copyright",
+    "copyright_law": "Copyright Law",
+    "text7": "allows access to works displayed at the Internet 70 years after the death of all authors and other authors of the work (translators, illustrators, etc.) and 50 years from the document was published. If you think that the document requested should be available and it is not, kindly contact us at",
+    "text8": "We will examine the rights associated with the document and, if possible, we will make it available.",
+
+    "order_link" : "http://www.en.nkp.cz/services/forms/krameriu-system-copy-order",
+    "copyright_link" : "http://ipk-en.nkp.cz/legislation/01_Legislation.htm",
+    "email" : "kramerius5@nkp.cz"
+  },
   "home": {
     "title": "Digital library Kramerius",
-    "btn_enter": "Enter",
+    "btn_enter": "Browse the library",
     "btn_search": "Search",
     "tab_visited": "Visited",
-    "tab_recommended": "Recommended",        
+    "tab_recommended": "Recommended",
     "tab_requested": "The most requested",
     "tab_latest": "Latest",
-    "select_library": "Select Library"
+    "select_library": "Select Library",
+    "contact" : "Kontakt",
+    "financing" : "Projekt je spolufinancován ze strukturálních fondů EU prostřednictvím IOP"
   },
   "metadata": {
     "author": "Author",
     "publisher": "Publishing details",
     "keywords": "Keywords",
-    "languages": "Language",        
+    "languages": "Language",
     "geonames": "Geographic names",
     "location": "Location",
     "abstract": "Abstract",
     "content": "Content",
     "extent": "Extent",
     "physical_description": "Physical Description",
-    "doctype": "Document type",    
+    "doctype": "Document type",
     "notes": "Notes",
-    "genres": "Genre", 
+    "genres": "Genre",
     "article": "Article",
     "review_of": "Review of",
     "volume": "Volume",
@@ -177,16 +202,16 @@
     "unit": "Part",
     "page": "Page",
     "volume_list": "Volume list",
-    "previous_volume": "Previous volume",   
+    "previous_volume": "Previous volume",
     "next_volume": "Next volume",
     "issue_date": "Date of publication",
-    "previous_issue": "Previous issue",   
+    "previous_issue": "Previous issue",
     "issue_list": "Issue list",
-    "next_issue": "Next issue",  
+    "next_issue": "Next issue",
     "unit_number": "Number",
     "unit_list": "Part list",
     "next_unit": "Next part:",
-    "previous_unit": "Previous part:",       
+    "previous_unit": "Previous part:",
     "shelf_locator": "Shelf/Call number: {{shelf_locator}}",
     "btn_show_metadata": "Show metadata",
     "btn_hide_metadata": "Hide metadata",
@@ -211,7 +236,7 @@
     "year_unknown": "-",
     "unit_title_unknown": "-",
     "unit_number_unknown": "-",
-    "previous_volume": "Previous Volume",   
+    "previous_volume": "Previous Volume",
     "next_volume": "Next Volume",
     "volume_list": "Volume list"
   },
@@ -248,7 +273,7 @@
     "tooltip_metadata": "Metadata",
     "tooltip_citation": "Citation",
     "all_pages": "All Pages"
-   
+
   },
   "book_toolbar": {
     "tooltip_show_metadata": "Show metadata",
@@ -264,7 +289,7 @@
   "pdf-dialog": {
     "title_generate": "Prepare to download",
     "title_prepare": "Prepare to print",
-    "message_generate": "Select page range for the PDF document.",    
+    "message_generate": "Select page range for the PDF document.",
     "message_prepare": "Select page range for printing.",
     "page_from": "From",
     "page_to": "To",
@@ -304,7 +329,8 @@
     },
     "private_document_jpeg": {
       "message": "The page is not publically accessible."
-    }
+    },
+    "ocr_error": "Error! The document is based on the old digitization and doesn't contain a structured transcript!"
   },
   "model" : {
     "monograph" : "Book",

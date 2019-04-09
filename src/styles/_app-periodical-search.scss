@@ -3,7 +3,7 @@
 app-periodical-search {
   display: block;
   height: $app-fulltext-search-bar-height;
-  
+
   .app-periodical-search-bar-wrapper {
     width: 100%;
     padding: 0 20px 0 20px;
@@ -29,21 +29,21 @@ app-periodical-search {
         top: 5px;
         color: $app-grey;
       }
-      
+
       .mdi-magnify {
         position: absolute;
         left: 0;
         top: 5px;
         color: $app-grey;
       }
-      
+
       &.app-is-query {
         input {
           border-bottom: 1px solid $primary-color !important;
           box-shadow: 0 1px 0 0 $primary-color;
         }
       }
-      
+
       &.app-is-query, &:focus-within {
         .mdi-magnify  {
           color: $primary-color;

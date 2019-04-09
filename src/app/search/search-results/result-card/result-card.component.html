@@ -1,0 +1,16 @@
+<a class="result-card-wrapper" *ngIf="item" routerLink="{{getUrl()}}">
+  <div class="result-card">      
+    <div class="result-card-strip">
+      <div class="result-card-strip-in result-card-strip-{{item['fedora.model']}}"></div>
+    </div>
+    <div class="result-card-image">
+      <div class="image" [style.background-image]="getThumb()"></div>
+    </div>
+    <div class="result-card-content">
+        <div class="result-card-title">{{item['dc.title']}}</div>
+        <div class="result-card-authors">{{item['dc.creator']}}</div>
+        <div class="result-card-date">{{item['datum_str']}}</div>
+        <div class="result-card-doctype">{{ 'model.' + item['fedora.model'] | translate }}</div>
+    </div>
+  </div>
+</a>

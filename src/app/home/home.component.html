@@ -36,15 +36,28 @@
       <app-document-card *ngFor="let item of getActiveItems()" [in]="'home'" [item]="item" class="col s12 m6 l6 xl4"></app-document-card>
     </div>
 
-    <app-paginator 
+    <app-paginator
         [activeIndex]="page"
         [overallCount]="getNumberOfActiveItems()"
         [step]="step"
         (next)="page = page + 1"
         (previous)="page = page - 1"
         (change)="page = $event">
-    </app-paginator> 
+    </app-paginator>
   </div>
 
 
-</div>
+
+    <div id="nk-footer">
+    <div id="nk-footer-left"><img src="./footloga_1.png" alt="NK ČR" /><img src="./footloga_2.png" alt="NK ČR" /><br />{{ 'home.financing' | translate }}</div>
+    <div id="nk-footer-right">
+        <h3> {{ 'home.contact' | translate }} </h3>
+        Národní knihovna ČR<br/>Klementinum 190<br/>110 00 Praha 1
+    </div>
+    <div id="nk-footer-social">
+      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FDigitalniKnihovnaNKCR%2F&width=67&layout=button_count&action=like&size=small&show_faces=false&share=false&height=21&appId=2057134117897733" width="130" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      &nbsp;&nbsp;
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" target="Twitter"><img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" alt="Twitter" height="32" /></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div></div>
+
+  </div>

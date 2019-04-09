@@ -4,7 +4,7 @@
   </mz-modal-header>
   <mz-modal-content>
     <mz-input-container>
-        <i mz-icon-mdi 
+        <i mz-icon-mdi
         class="copy-to-clipboard"
         mz-tooltip [tooltip]="'common.copy_to_clipboard' | translate" [position]="'bottom'"
         (cbOnSuccess)="onCopied($event)" [ngxClipboard]="inputTarget"
@@ -18,7 +18,6 @@
       <div class="label">{{ 'share-dialog.social' | translate }}</div>
       <i class="app-mdi-share-facebook" (click)="share('facebook')"></i>
       <i class="app-mdi-share-twitter" (click)="share('twitter')"></i>
-      <i class="app-mdi-share-gplus" (click)="share('gplus')"></i>      
     </div>
   </mz-modal-content>
   <mz-modal-footer>

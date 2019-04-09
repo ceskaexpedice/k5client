@@ -343,8 +343,8 @@ export class KrameriusApiService {
 
     downloadPdf(uuids: string[], language: string = 'cs') {
         const url = this.getApiUrl() + '/pdf/selection'
-                + '?pids=' + uuids.join(',')
-                + '&language=' + language;
+              + '?pids=' + uuids.join(',')
+              + '&language=' + language;
         return this.doGetBlob(url);
     }
 

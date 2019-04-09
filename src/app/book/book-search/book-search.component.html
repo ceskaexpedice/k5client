@@ -1,10 +1,10 @@
 <div class="app-book-search-bar-wrapper">
   <div class="app-book-search-bar" [class.app-is-query]="bookService.getFulltextQuery()">
-    <input type="text" (keyup)="onKeyUp($event)"  [placeholder]="'searchbar.document' | translate" type="text"  [(ngModel)]="fulltextQuery" /> 
+    <input type="text" (keyup)="onKeyUp($event)"  [placeholder]="'searchbar.document' | translate" type="text"  [(ngModel)]="fulltextQuery" />
     <i *ngIf="bookService.getFulltextQuery()" mz-icon-mdi [icon]="'close'" (click)="cleanQuery()" class="app-cursor-pointer"></i>
     <i mz-icon-mdi [icon]="'magnify'" (click)="onMagnifyIconClick()"  class="app-cursor-pointer"></i>
   </div>
   <mz-checkbox-container *ngIf="bookService.getFulltextQuery()">
     <input mz-checkbox (change)="checkboxChanged()" [(ngModel)]="bookService.fulltextAllPages" [label]="'book_controls.all_pages' | translate" id="checkbox-id" type="checkbox">
-  </mz-checkbox-container> 
+  </mz-checkbox-container>
 </div>

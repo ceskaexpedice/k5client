@@ -6,7 +6,7 @@
   <mz-collapsible [mode]="'expandable'">
       <mz-collapsible-item [active]="true ">
         <mz-collapsible-item-header>
-          {{ 'search.accessibility.label' | translate }}   
+          {{ 'search.accessibility.label' | translate }}
           <i mz-icon-mdi [icon]="'chevron-down'" [class]="'app-clean-mg'"></i>
           <i mz-icon-mdi [icon]="'chevron-left'" [class]="'app-clean-mg'"></i>
         </mz-collapsible-item-header>
@@ -32,7 +32,7 @@
         </mz-collection>
         </mz-collapsible-item-body>
       </mz-collapsible-item>
-    </mz-collapsible> 
+    </mz-collapsible>
 
 
     <mz-collapsible [mode]="'expandable'" *ngIf="periodicalService.isPeriodical()">
@@ -50,13 +50,13 @@
               <span>{{ 'search.year-range.to' | translate }}</span>
               <input [(ngModel)]="yearTo" (change)="onYearToValueChanged()" type="number">
             </div>
-  
+
             <a class="light-blue darken-3 z-depth-0 btn waves-effect waves-light" mz-button (click)="applyYearRange()">
               <span>{{ 'search.year-range.apply' | translate }}</span>
             </a>
           </div>
-  
-  
+
+
         </mz-collapsible-item-body>
       </mz-collapsible-item>
     </mz-collapsible>
@@ -64,4 +64,3 @@
 
 
 </div>
-

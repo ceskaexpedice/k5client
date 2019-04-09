@@ -605,10 +605,17 @@ export class BookService {
                 button: 'common.close'
             });
         } else if (this.pageState === BookPageState.Success) {
+
+          if (this.getRightPage()) {
+            window.open('downloadIMG.html#'+this.getPage().uuid+'#'+this.getRightPage().uuid, '_blank');
+          } else {
+            window.open('downloadIMG.html#'+this.getPage().uuid, '_blank');
+          }
+          /*
             window.open(this.krameriusApiService.getFullJpegUrl(this.getPage().uuid), '_blank');
             if (this.getRightPage()) {
                 window.open(this.krameriusApiService.getFullJpegUrl(this.getRightPage().uuid), '_blank');
-            }
+            }*/
         }
     }
 
@@ -710,7 +717,7 @@ export class BookService {
                 message: 'dialogs.private_sheetmusic.message',
                 button: 'common.close'
             });
-        } else if (this.isPrivate && type === 'generate') {
+        } else if (this.isPageInaccessible() && type === 'generate') { //this.isPrivate
             this.modalService.open(SimpleDialogComponent, {
                 title: 'common.warning',
                 message: 'dialogs.private_document_pdf.message',
@@ -721,7 +728,7 @@ export class BookService {
                 pageCount: this.getPageCount(),
                 currentPage: this.getPage().index,
                 doublePage: this.doublePage,
-                maxPageCount: 150,
+                maxPageCount: 60,
                 uuids: this.uuids(),
                 type: type,
                 name: this.metadata.getShortTitle()

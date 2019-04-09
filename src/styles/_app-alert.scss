@@ -1,10 +1,12 @@
 // --- ALERTS ---
 
 app-alert {
- .alert {   
+ .alert {
     @extend .text-darken-4, .z-depth-0;
     margin-bottom: 0;
     margin-top: 60px;
+    font-size:22px;
+
 
     &.alert-success {
       @extend .green-text;
@@ -40,7 +42,7 @@ app-alert {
       color: #222;
     }
   }
-  
+
   app-root main app-book app-viewer .app-viewer-wrapper & {
     position: absolute;
     width: 100%;

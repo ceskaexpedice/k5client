@@ -8,8 +8,11 @@
         </div>
       </div>
       <div class="app-card-content">
-        <div *ngIf="item.title" class="app-card-title">
-          {{item.title}}
+        <div *ngIf="item.title && item.title.length>60" class="app-card-title" title="{{item.title}}">
+            {{item.title}}
+        </div>
+        <div *ngIf="item.title && item.title.length<=60" class="app-card-title">
+            {{item.title}}
         </div>
         <div *ngIf="item.authors && item.authors.length > 0" class="app-card-authors">
           <i mz-icon-mdi [icon]="'account'" [class]="'app-clean-mg'"></i>

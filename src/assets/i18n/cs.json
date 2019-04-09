@@ -112,13 +112,13 @@
       "doctypes": "Vyhledat typ dokumentu",
       "authors": "Vyhledat autora",
       "collections": "Vyhledat sbírku",
-      "keywords": "Vyhledat klíčové slovo", 
+      "keywords": "Vyhledat klíčové slovo",
       "languages": "Vyhledat jazyk",
       "locations": "Vyhledat místo uložení",
       "geonames": "Vyhledat Geografický název"
     },
     "ordering": {
-      "label": "Řazení",      
+      "label": "Řazení",
       "occurrence": "Podle výskytů",
       "alphabetical": "Abecedně"
     },
@@ -140,21 +140,45 @@
     "error": "Chyba",
     "no_results_found": "Nebyly nalezeny žádné výsledky. Prosím, zkuste jiný dotaz.",
     "inaccessible_document": "Tento dokument není veřejně přístupný",
-    "inaccessible_document_description": "Tento dokument je stále chráněn Autorským zákonem (č. 121/2000 Sb.) a není ho tedy možné veřejně zpřístupnit, dokud neuplyne 70 let od smrti všech jeho autorů (včetně překladatele, ilustrátora atd.) a 50 let od vydání díla. K dokumentu lze získat přístup z počítačových stanic v budově knihovny, která jej vlastní. Informaci o vlastnictví požadovaného dokument zjistíte v podrobnostech vpravo jako „Místo uložení“.",
+    "inaccessible_document_description": " ",
     "inaccessible_document_dnnt": "Tento dokument není veřejně přístupný",
     "inaccessible_document_dnnt_description": "Tento dokument spadá do režimu Děl nedostupných na trhu. Je dostupný ve vybraných knihovnách na vyhrazených terminálech. Chystá se vzdálené zpřístupnění pro registrované uživatele knihoven.",
     "failed_to_load_image": "Obrázek se nepodařilo načíst",
     "book_no_results": "Nebyly nalezeny žádné výsledky"
   },
+  "inaccessible_document": {
+   "text1": "Digitální kopie dokumentu je přístupná pouze v prostorách Národní knihovny ČR.",
+   "title1": "Plný přístup k digitálním dokumentům v NK ČR",
+   "text2": "V souladu se zákonem č. 121/2000 Sb. (autorský zákon) mohou být některé digitalizované dokumenty zobrazeny pouze v prostorách knihovny. Plný přístup k tomuto dokument je možný z vybraných počítačů ve studovnách NK ČR. U těchto počítačů je zamezen přístup k internetu, není povoleno ukládání digitalizovaných dokumentů na USB či jiná paměťová média. Dokumenty lze v NK ČR vytisknout.",
+   "text3": " Počítače s plným přístupem k Digitální knihovně Kramerius najdete v Hale služeb a jednotlivých studovnách NK ČR.",
+
+   "title2": "Objednání kopií z digitálních dokumentů",
+   "text4": "Papírovou kopii digitálního dokumentu z fondu NK ČR si můžete objednat prostřednictvím ",
+   "form": "formuláře",
+   "text5": "Uživatelé, kteří mají uzavřenou smlouvu o využívání služby ",
+   "text6": " , si mohou objednat zhotovení kopie i prostřednictvím služby eDDO. Více informací o službě eDDO naleznete na ",
+   "web_nk": "stránkách NK ČR",
+
+   "title3": "Zpřístupňování digitálních dokumentů v souladu s autorským zákonem",
+   "copyright_law": "Autorský zákon",
+   "text7": "připouští zpřístupnění děl na internetu 70 let po smrti  všech autorů a dalších původců díla (překladatelé, ilustrátoři apod.) a 50 let od data vydání dokumentu. Pokud se domníváte, že by dokument měl být přístupný a není, napište, prosím, na adresu",
+   "text8": "Práva spjatá s dokumentem přezkoumáme a případně jej zpřístupníme.",
+
+   "order_link" : "http://www.nkp.cz/sluzby/formulare/kramerius-objednavka",
+   "copyright_link" : "http://ipk.nkp.cz/legislativa/01_LegPod/autorske-pravo/",
+   "email" : "kramerius5@nkp.cz"
+ },
   "home": {
     "title": "Digitální knihovna Kramerius",
-    "btn_enter": "Vstupte",
+    "btn_enter": "Procházet knihovnu",
     "btn_search": "Hledej",
     "tab_visited": "Navštívené",
-    "tab_recommended": "Doporučené",    
+    "tab_recommended": "Doporučené",
     "tab_requested": "Nejžádanějsí",
     "tab_latest": "Nejnovější",
-    "select_library": "Vybrat knihovnu"
+    "select_library": "Vybrat knihovnu",
+    "contact" : "Kontakt",
+    "financing" : "Projekt je spolufinancován ze strukturálních fondů EU prostřednictvím IOP"
   },
   "metadata": {
     "author": "Autor",
@@ -167,7 +191,7 @@
     "content": "Obsah",
     "extent": "Rozsah",
     "physical_description": "Fyzický popis",
-    "doctype": "Typ dokumentu",        
+    "doctype": "Typ dokumentu",
     "notes": "Poznámky",
     "genres": "Žánr",
     "article": "Článek",
@@ -178,16 +202,16 @@
     "unit": "Část",
     "page": "Strana",
     "volume_list": "Přejít na periodikum",
-    "previous_volume": "Předchozi ročník",   
+    "previous_volume": "Předchozi ročník",
     "next_volume": "Následující ročník",
     "issue_date": "Datum vydání",
-    "previous_issue": "Předchozi číslo",   
+    "previous_issue": "Předchozi číslo",
     "issue_list": "Přejít na ročník",
     "next_issue": "Následující číslo",
     "unit_number": "Číslo",
     "unit_list": "Přejít na svazek knih",
     "next_unit": "Následující část:",
-    "previous_unit": "Předchozi část:",   
+    "previous_unit": "Předchozi část:",
     "shelf_locator": "Signatura: {{shelf_locator}}",
     "btn_show_metadata": "Zobrazit metadata",
     "btn_hide_metadata": "Skrýt metadata",
@@ -212,7 +236,7 @@
     "year_unknown": "-",
     "unit_title_unknown": "-",
     "unit_number_unknown": "-",
-    "previous_volume": "Předchozi ročník",   
+    "previous_volume": "Předchozi ročník",
     "next_volume": "Následující ročník",
     "volume_list": "Seznam ročníků"
   },
@@ -260,7 +284,7 @@
   "pdf-dialog": {
     "title_generate": "Příprava ke stažení",
     "title_prepare": "Příprava k tisku",
-    "message_generate": "Vyberte stránky pro výsledný PDF dokument.",    
+    "message_generate": "Vyberte stránky pro výsledný PDF dokument.",
     "message_prepare": "Vyberte stránky k tisku.",
     "page_from": "Od stránky",
     "page_to": "Po stránku",
@@ -300,7 +324,8 @@
     },
     "private_document_jpeg": {
       "message": "Stránka není veřejně dostupná."
-    }
+    },
+    "ocr_error": "Chyba! Dokument pochází ze staré digitalizace a neobsahuje strukturovaný přepis!"
   },
   "model" : {
     "monograph" : "Kniha",

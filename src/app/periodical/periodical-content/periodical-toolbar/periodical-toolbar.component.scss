@@ -1,0 +1,35 @@
+.periodical-toolbar {
+    height:56px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    margin: 0 15px;
+    .periodical-title {
+        line-height: 56px;
+        height: 56px;
+        overflow: hidden;
+        color: #777;
+        font-size: 22px;
+        padding-left: 5px;
+    }
+    .layout-button {
+        float: right;
+        opacity: 0.25;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.7;
+        }
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-top: 10px;
+        padding: 8px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        &.layout-button-active {
+            opacity: 0.7;
+        }
+    }
+
+
+}

@@ -1,0 +1,52 @@
+STATUSQUO v1.2.6 (1.4.2019)
+<strong>v1.2.6 (28.3.2019)</strong>
+<ul>
+  <li>Podmínky využití v generovaném PDF v jazyce zvoleném v klientovi (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/135" target="_blank">#135</a>)</li>
+  <li>Oprava přehrávání zvukových náhrávek na iOS (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/27" target="_blank">#27</a>, <a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/47" target="_blank">#47</a>)</li>
+  <li>Oprava řazení jednotlivých částí vícesvazkové monografie (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/86" target="_blank">#86</a>)</li>
+  <li>Možnost nastavení jíného loga pro domovskou obrazovku (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/201" target="_blank">#201</a>)</li>
+  <li>Lepší chování našeptávače (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/205" target="_blank">#205</a>)</li>
+  <li>Lepší fungování tlačítka zpět (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/179" target="_blank">#179</a>)</li>
+  <li>Oprava generování odkazu pro sdílení a citaci (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/204" target="_blank">#204</a>)</li>
+  <li>Změna výchozí favicon (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/198" target="_blank">#198</a>)</li>
+  <li>Zobrazení doplňků ke jménu autora (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/197" target="_blank">#197</a>)</li>
+  <li>Oprava překryvu ikony u vyhledávacího pole (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/190" target="_blank">#190</a>)</li>
+
+</ul>
+
+
+STATUSQUO v1.2.5 (8.3.2019)
+ <ul>
+   <li>Přesun hřbetu na konec seznamu stránek (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/187" target="_blank">#187</a>)</li>
+   <li>Google Analytics události (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/188" target="_blank">#188</a>)</li>
+   <li>Oprava zobrazení příloh u fulltextového hledání v periodiku a metadat u příloh v prohlížečce (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/184" target="_blank">#184</a>)</li>
+   <li>Zobrazení příloh (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/177" target="_blank">#177</a>)</li>
+   <li>Ranní/odpolední/večerní vydání u citace čísla periodika</li>
+   <li>ISBN v podrobnostech a v citaci (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/180" target="_blank">#180</a>)</li>
+ </ul>
+
+STATUSQUO 1.2.4
+
++ citacie diela/strany
++ odkaz do starej digitalizacie (nie fazety, len samotny vyhladavany text)
++ about - > info page
++ donator - > Norske fondy
+
+<strong>v1.2.4 (6.2.2019)</strong>
+<ul>
+  <li>Víceúrovňové citace (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/36" target="_blank">#36</a>)</li>
+  <li>Možnost prokliku do K3 (NKP)</li>
+  <li>Nastavitelná stránka s informacemi (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/113" target="_blank">#113</a>)</li>
+</ul>
+
+<strong>v1.2.3 (5.2.2019)</strong>
+<ul>
+  <li>Citace (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/36" target="_blank">#36</a>)</li>
+  <li>Dva způsoby zobrazení loga na hlavní stránce (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/169" target="_blank">#169</a>)</li>
+  <li>Výběr textu na stránce (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/52" target="_blank">#52</a>)</li>
+  <li>Výřez obrázku (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/174" target="_blank">#36</a>)</li>
+  <li>Zobrazení ISSN v metadatech</li>
+  <li>Zobrazení donátora</li>
+  <li>Opravy chyb (<a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/168" target="_blank">#168</a>, <a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/173" target="_blank">#173</a>, <a href="https://github.com/ceskaexpedice/kramerius-web-client/issues/170" target="_blank">#170</a>)</li>
+</ul>
+

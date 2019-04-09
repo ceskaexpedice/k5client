@@ -34,7 +34,7 @@
         ISBN {{ metadata.identifiers['isbn'] }}
       </div>
 
-      
+
       <div *ngIf="metadata.currentUnit">
         <a [routerLink]="[appSettings.getRouteFor('periodical'), metadata.uuid]" (click)="analytics.sendEvent('metadata', 'link', 'unit list');">
           {{ 'metadata.unit_list' | translate }}
@@ -45,7 +45,7 @@
           {{ 'metadata.volume_list' | translate }}
         </a>
       </div>
-      
+
       <div class="divider"></div>
 
     </ng-container>
@@ -60,7 +60,7 @@
 
       <div class="divider"></div>
     </div>
-    
+
     <div *ngIf="metadata.volume">
       <label>{{ 'metadata.volume' | translate }}</label>
       <div class="app-value">{{ 'metadata.volume_year' | translate }} <strong>{{ metadata.volume.year }}</strong></div>
@@ -79,7 +79,7 @@
             {{ 'metadata.previous_volume' | translate }} {{ metadata.previousVolume.subtitle }} ({{ metadata.previousVolume.title }})
           </a>
         </div>
-  
+
         <div *ngIf="metadata.nextVolume">
           <a [routerLink]="[appSettings.getRouteFor('periodical'), metadata.nextVolume.uuid]" (click)="analytics.sendEvent('metadata', 'link', 'next volume');">
             {{ 'metadata.next_volume' | translate }} {{ metadata.nextVolume.subtitle }} ({{ metadata.nextVolume.title }})
@@ -93,7 +93,7 @@
       <label>{{ 'metadata.issue' | translate }}</label>
       <div class="app-value">{{ 'metadata.issue_date' | translate }} <strong>{{ metadata.currentIssue.title }}</strong></div>
       <div class="app-value" >{{ 'metadata.issue' | translate }} <strong>{{ metadata.currentIssue.subtitle }}</strong></div>
-      
+
       <div *ngIf="metadata.previousIssue">
         <a [routerLink]="[appSettings.getRouteFor('view'), metadata.previousIssue.uuid]" (click)="analytics.sendEvent('metadata', 'link', 'previous issue');">
           {{ 'metadata.previous_issue' | translate }} {{ metadata.previousIssue.subtitle }} ({{ metadata.previousIssue.title }})
@@ -214,7 +214,7 @@
       </div>
       <div class="divider"></div>
     </div>
-    
+
     <div *ngIf="metadata.locations.length > 0">
       <label>{{ 'metadata.location' | translate }}</label>
       <div *ngFor="let location of metadata.locations">
@@ -257,7 +257,7 @@
       <div *ngFor="let content of metadata.contents" class="app-value" >{{ content }}</div>
       <div class="divider"></div>
     </div>
-    
+
     <div *ngIf="metadata.notes.length > 0">
       <label>{{ 'metadata.notes' | translate }}</label>
       <div *ngFor="let note of metadata.notes" class="app-value" >{{ note }}</div>

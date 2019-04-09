@@ -1,11 +1,12 @@
-<a *ngFor="let item of browseService.results; let odd=odd; let even=even;" 
-      class="app-browse-item" 
+<span *ngFor="let item of browseService.results; let odd=odd; let even=even;">
+<a *ngIf="!containsHTMLEntities(item.value)"
+      class="app-browse-item"
       [ngClass]="{ odd: odd, even: even, hidden: !item.name}"
       [routerLink]="appSettings.getRouteFor('search')" [queryParams]="getParams(item.value)"
       >
   <div class="right">{{item.count}}x</div>
-  <div>{{item.name | appUpcase }}</div>
-</a>
+  <div>{{ item.name | appUpcase }}</div>
+</a></span>
 
 <div class="clearfix"></div>
 
@@ -15,9 +16,9 @@
                (next)="browseService.nextPage()"
                (previous)="browseService.previousPage()"
                (change)="browseService.onPage($event)">
-</app-paginator> 
+</app-paginator>
 <mz-spinner *ngIf="browseService.loading"
-            class="medium-centered-spinner" 
+            class="medium-centered-spinner"
            [color]="'blue'"
            [size]="'medium'">
 </mz-spinner>

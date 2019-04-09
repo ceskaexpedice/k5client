@@ -4,6 +4,7 @@ import { Component, OnInit, Input} from '@angular/core';
 import { OnDestroy } from '@angular/core/src/metadata/lifecycle_hooks';
 import { AnalyticsService } from '../../services/analytics.service';
 
+
 @Component({
   selector: 'app-book-search',
   templateUrl: './book-search.component.html'})
@@ -23,6 +24,7 @@ export class BookSearchComponent implements OnInit, OnDestroy {
       }
     );
   }
+
 
   onKeyUp(event) {
     if (event.keyCode === 13) {
